@@ -1,0 +1,48 @@
+{
+  "credentials": {
+    "username": "eng22am0021@dsu.edu.in",
+    "password": "Harshith@123"
+  },
+  "taskBot": {
+    "name": "usecase1",
+    "description": "Automated test bot for message box functionality",
+    "folder": "\\Bots",
+    "messageText": "Test Message from Automation",
+    "scrollbarLines": "30"
+  },
+  "learningInstance": {
+    "name": "TestLearningInstance",
+    "description": "Test learning instance for invoice processing",
+    "documentType": "User-defined",
+    "language": "English",
+    "locale": "English (United States)",
+    "provider": "Automation Anywhere (User-defined)",
+    "improveAccuracy": true,
+    "fields": [
+      {
+        "fieldName": "invoice",
+        "fieldLabel": "invoice",
+        "dataType": "Text",
+        "confidence": "80",
+        "required": true,
+        "extractPattern": false
+      }
+    ]
+  },
+  "timeouts": {
+    "short": 3000,
+    "medium": 5000,
+    "long": 10000,
+    "extraLong": 30000
+  },
+  "messages": {
+    "success": {
+      "botCreated": "Bot created successfully",
+      "learningInstanceCreated": "Learning instance created successfully"
+    },
+    "error": {
+      "loginFailed": "Login failed",
+      "creationFailed": "Creation failed"
+    }
+  }
+}
