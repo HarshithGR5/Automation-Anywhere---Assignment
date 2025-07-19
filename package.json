@@ -1,0 +1,30 @@
+{
+  "name": "cypress-automation-anywhere",
+  "version": "1.0.0",
+  "description": "Cypress POM Framework for Automation Anywhere Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "open": "cypress open",
+    "test:createBot": "cypress run --spec 'cypress/e2e/tests/createMessageBoxTask.cy.js'",
+    "test:createLearning": "cypress run --spec 'cypress/e2e/tests/createLearningInstance.cy.js'",
+    "generate:report": "mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json && marge cypress/reports/merged-report.json --reportDir cypress/reports/html"
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "pom",
+    "testing"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
